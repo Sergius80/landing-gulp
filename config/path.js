@@ -22,4 +22,21 @@ module.exports = {
     dest: pathDest + '/js'
   },
 
+  fonts: {
+    src: pathSrc + '/fonts/*.*',
+    watch: pathSrc + '/fonts/**/*.*',
+    dest: pathDest + '/fonts'
+  },
+
+  icons: {
+    src: pathSrc + '/icon-fonts/*.*',
+    watch: pathSrc + '/icon-fonts/**/*.*',
+    dest: pathDest + '/icon-fonts'
+  },
+
+  images: {
+    src: pathSrc + '/images/**/*.*',
+    watch: pathSrc + '/images/**/*.*',
+    dest: pathDest + '/images'
+  },
 }

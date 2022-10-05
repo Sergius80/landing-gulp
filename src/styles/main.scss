@@ -1,3 +1,11 @@
-.heading {
-  font-size: 50px;
-}
+
+@import '../../node_modules/scss-reset/reset';
+
+@import './global/base.scss';
+@import './global/fonts.scss';
+@import './global/icon-fonts.scss';
+@import './global/common.scss';
+@import './global/buttons.scss';
+
+
+@import './bloks/header/header.scss';

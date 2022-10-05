@@ -1,0 +1,117 @@
+.header__top {
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #f0f2f4;
+}
+
+.contacts {
+  text-align: right;
+}
+
+.contact {
+  display: inline-block;
+  padding: 12px 13px;
+  border-right: 1px solid #e2e2e2;
+  font-size: 15px;
+  font-family: $font-heading;
+  color: $gray;
+  transition: all 0.5s;
+
+  &__icon {
+    margin-right: 10px;
+    vertical-align: bottom;
+    font-size: 20px;
+  }
+  &:last-child {
+    border-right: none;
+  }
+  &:hover {
+    color: lighten($gray, 20%);
+  }
+
+  &:hover .icon-facebook{
+    color: lighten($blue, 20%);
+  }
+}
+
+.icon-facebook_blue {
+  color: $blue;
+  margin-right: 0;
+  transition: all 0.5s;
+  
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  width: 242px;
+  height: 50px;
+
+  &__picture {
+    width: 74px;
+    height: 49px;
+    margin-right: 10px;
+  }
+
+  &__site-name {
+    color: $gray;
+    font-size: 37px;
+    line-height: 100%;
+    font-family: $font-main-bold;
+  }
+
+  &__company-slogan {
+    font-size: 15px;
+    font-family: $font-heading;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+
+  &__item {
+    padding: 0px 22px 0 17px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 5px;
+      height: 5px;
+      left: 20px;
+      top: -2px;
+      border-radius: 50%;
+      background-color: #424242;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-family: $font-main-bold;
+    font-size: 15px;
+    line-height: 1.2em;
+    color: $gray;
+    transition: all 0.5s;
+
+    &_active {
+    color: $red;
+    }
+
+    &:hover {
+    color: $red;
+    }
+  }
+}
+
+.header__bottom {
+  padding: 41px 0 32px;
+}
