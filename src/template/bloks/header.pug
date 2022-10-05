@@ -1,0 +1,33 @@
+header.header
+  .header__top
+  .container
+    .contacts
+      a.contact(href="tel:+3080950000")
+        i.icon-mobile.contact__icon
+        span.contact__text 3080950000
+      a.contact(href="mailto:info@business.co")
+        i.icon-envelope.contact__icon
+        sapn.contact__text info@business.co
+      a.contact(href="#")
+        i.icon-facebook.contact__icon.icon-facebook_blue
+   
+  .header__bottom
+    .container
+      .header__content
+        a.logo(href="/")
+          div.logo__picture
+            img.logo__img(src="images/header/logo.png" alt="logo")
+          div.logo__text
+            p.logo__site-name Busines
+            p.logo__company-slogan Tagline goes here
+      
+        -let menuItems = ['Home', 'About Us', 'Our Approch', 'Our Work'];
+        ul.nav
+          each item, i in menuItems
+            if i === 0
+              li.nav__item
+                sapn.nav__link.nav__link_active #{menuItems[i]}
+            else
+              li.nav__item
+                a.nav__link(href="#") #{menuItems[i]}
+        a.button.header__button.botton-red(href="#") Free Consultation

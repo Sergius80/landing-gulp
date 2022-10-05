@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 25px;
+  transition: all 0.5s;
+  color: $white;
+  font-family: $font-main-bold;
+  font-size: 15px;
+  background-color: $red;
+  &:hover {
+    background-color: lighten($red, 15%);
+  }
+
+  &_yellow {
+    padding: 25px 40px;
+    text-transform: uppercase;
+    background-color: $yelow;
+
+    &:hover {
+      background-color: lighten($yelow, 15%);
+    }
+  }
+}

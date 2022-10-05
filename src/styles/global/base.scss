@@ -1,0 +1,12 @@
+@import './global/variables.scss';
+
+body {
+  color: $font-color-main;
+  $font-main: 'Open Sans-normal';
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+}
+
+a {
+  text-decoration: none;
+}
