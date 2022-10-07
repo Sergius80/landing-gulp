@@ -3,20 +3,16 @@
   padding-top: 175px;
   text-align: center;
   color: $white;
-  background: url(../images/provide-section/main-image.jpg) no-repeat;
+  background: url(../images/general/main-image.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 
-  &__about {
+  &__heading {
     font-size: $font-size-large;
-    line-height: $line-height-main;
-    font-family: $font-main-bold;
   }
 
   &__title {
     margin-bottom: 35px;
     font-size: $font-size-h1;
-    line-height: $line-height-main;
-    font-family: $font-heading;
   }
 }

@@ -1,0 +1,48 @@
+.about {
+  padding-top: 95px;
+  text-align: center;
+
+  &__text-section {
+    margin-bottom: 46px;
+  }
+
+  &__heading {
+    color: $gray;
+    font-size: $font-size-h2;
+  }
+
+  &__title {
+    color: $gray;
+    font-size: $font-size-title;
+  }
+
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  
+  &__item {
+    width: 240px;
+  }
+
+  &__icon {
+    width: 66px;
+    height: 79px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+    font-family: $font-main-bold;
+    font-size: $font-size-h3;
+  }
+
+  &__description {
+    font-family: $font-main;
+    font-size: $font-size-main;
+  }
+
+}
