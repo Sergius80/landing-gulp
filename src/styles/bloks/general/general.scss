@@ -1,0 +1,18 @@
+.general {
+  min-height: 590px;
+  padding-top: 175px;
+  text-align: center;
+  color: $white;
+  background: url(../images/general/main-image.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__heading {
+    font-size: $font-size-large;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    font-size: $font-size-h1;
+  }
+}

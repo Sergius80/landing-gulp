@@ -10,3 +10,26 @@ body {
 a {
   text-decoration: none;
 }
+
+.heading {
+  font-family: $font-main-bold;
+  line-height: 1.2em;
+}
+
+.title {
+  position: relative;
+  font-family: $font-title;
+  line-height: 1.2em;
+}
+
+.title_line-bottom::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 47px;
+  height: 5px;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%, 0);
+  background-color: $gray;
+}
